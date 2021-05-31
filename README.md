@@ -1,23 +1,22 @@
-UDONBYTE
+lara-jwt-core
 =================
 
-A core engine for UdonByte created using Laravel & MySQL with JWT Authentication
+A basic Laravel project with JWT Authentication
 
 ## Project Details
-- Project : Udon Engine
+- Project : lara-jwt-core
 - Version : v1.0
 - Author : Nazrul Hanif
-- Date Created : 20210530
+- Date Created : 20210531
 
 ## Project Contributor
-- Frontend Developer : [Ahmad Miqdad](https://github.com/ahmadudon6)
-- Backend Developer : [Nazrul Hanif](https://github.com/lordnaz)
+- Developer : [Nazrul Hanif](https://github.com/lordnaz)
+
 
 ## First Timer Setup
-
 This Instruction is for the first timer setup.
 
-1. Install Composer (Make sure to have PHP 7.4 & above)
+1. Install Composer (Make sure to have PHP 7.4 & above - Recommended)
 2. Clone this repo to your local
 3. Dependency Manager : run `composer install` in your cmd. 
 ```
@@ -37,6 +36,24 @@ Use this instruction to run existing Migration file.
 ```
 $ php artisan migrate:refresh
 ```
+
+## Faker/Factories
+
+Use this to run some faker data.
+
+1. PHP tinker : run `php artisan tinker` in your cmd. 
+```
+$ php artisan tinker
+```
+2. create 5 dummy data of user faker : run `User::factory()->count(5)->create()`
+```
+$ User::factory()->count(5)->create()
+```
+3. create 15 dummy data of todo faker : run `Todo::facroty()->count(15)->create()`
+```
+$ Todo::facroty()->count(15)->create()
+```
+
 
 ## Support 
 
