@@ -51,7 +51,7 @@ $ User::factory()->count(5)->create()
 ```
 3. create 15 dummy data of todo faker : run `Todo::facroty()->count(15)->create()`
 ```
-$ Todo::facroty()->count(15)->create()
+$ Todo::factory()->count(15)->create()
 ```
 
 
