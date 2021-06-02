@@ -55,6 +55,27 @@ $ Todo::factory()->count(15)->create()
 ```
 
 
+## IMPORTANT! 
+
+If you encounter ERR 500 during serve the project. Follow this instruction!
+
+1. copy .env files : run `cp .env.example .env`.
+```
+$ cp .env.example .env
+```
+2. generate key : run `php artisan key:generate`.
+```
+$ php artisan key:generate
+```
+3. clear cache : run `php artisan config:cache`.
+```
+$ php artisan config:cache
+```
+4. serve again : run `php artisan serve`.
+```
+$ php artisan serve
+```
+
 ## Support 
 
 For Support & Inquiry kindly contact me at:-
