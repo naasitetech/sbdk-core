@@ -67,11 +67,19 @@ $ cp .env.example .env
 ```
 $ php artisan key:generate
 ```
-3. clear cache : run `php artisan config:cache`.
+3. generate key : run `php artisan jwt:secret`.
 ```
-$ php artisan config:cache
+$ php artisan jwt:secret
 ```
-4. serve again : run `php artisan serve`.
+4. cache clear : run `php artisan cache:clear`.
+```
+$ php artisan cache:cache
+```
+5. config cache : run `php artisan config:clear`.
+```
+$ php artisan config:clear
+```
+6. serve again : run `php artisan serve`.
 ```
 $ php artisan serve
 ```
